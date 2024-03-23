@@ -28,3 +28,4 @@ set modelines=5         # reset to default (set to 0 by system vimrc)
 
 # Load plugins
 runtime ledger.vim
+runtime markdown.vim
