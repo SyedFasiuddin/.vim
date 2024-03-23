@@ -4,8 +4,8 @@ if !has("vim9script")
 endif
 vim9script
 
-syntax on
 filetype plugin indent on
+syntax on
 
 set noswapfile
 set hidden
