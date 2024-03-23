@@ -21,3 +21,6 @@ set colorcolumn=80
 set wildmenu
 set wildoptions=pum
 set pumheight=8
+
+set viminfofile=~/.vim/main.viminfo
+set path=.,,**,
