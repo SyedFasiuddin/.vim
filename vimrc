@@ -16,7 +16,6 @@ set listchars=tab:>-,trail:-
 
 set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 set autoindent smartindent
-set colorcolumn=80
 
 set wildmenu
 set wildoptions=pum
