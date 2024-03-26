@@ -24,3 +24,6 @@ set pumheight=8
 set viminfofile=~/.vim/main.viminfo
 set path=.,,**,
 set modelines=5         # reset to default (set to 0 by system vimrc)
+
+g:netrw_banner = 0
+autocmd BufWritePre * :%s/\s\+$//e
