@@ -2,12 +2,14 @@ vim9script
 
 # Plugin configuration for `vim-ledger`
 
-var vim_ledger_path = "~/.vim/pack/plugins/start/vim-ledger"
-if !isdirectory(glob(vim_ledger_path))
-    echom "Installing vim-ledger..."
-    system("git clone --depth=1 "
-        .. "https://github.com/ledger/vim-ledger "
-        .. vim_ledger_path)
+if !has('win32')
+    var vim_ledger_path = "~/.vim/pack/plugins/start/vim-ledger"
+    if !isdirectory(glob(vim_ledger_path))
+        echom "Installing vim-ledger..."
+        system("git clone --depth=1 "
+            .. "https://github.com/ledger/vim-ledger "
+            .. vim_ledger_path)
+    endif
 endif
 
 g:ledger_maxwidth = 80
