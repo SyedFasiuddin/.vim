@@ -20,4 +20,6 @@ set background=dark
 colorscheme gruvbox
 
 # Setting g:gruvbox_transparent_bg = "1"  doesn't work for some reason
-hi Normal ctermbg=NONE guibg=NONE
+if !has("gui_running")
+    hi Normal ctermbg=NONE guibg=NONE
+endif
