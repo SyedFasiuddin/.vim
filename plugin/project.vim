@@ -18,7 +18,7 @@ endif
 
 " Tectonic project
 " Needs the `tectonic` compiler script which doesn't come with vim/nvim
-" See:  <https://github.com/SyedFasiuddin/.dotfiles.git>
+" See:  <https://github.com/SyedFasiuddin/.vim.git>
 if filereadable("Tectonic.toml")
     set wildignore+=*/build/*
 
@@ -45,6 +45,16 @@ if filereadable("package.json")
     set wildignore+=*/out/*
     set wildignore+=*/dist/*
     set wildignore+=*.lock
+
+    finish
+endif
+
+" .vim folder
+if filereadable("vimrc")
+    set wildignore+=*/spell/*
+    set wildignore+=*/pack/*
+    set wildignore+=.netrwhist
+    set wildignore+=*.viminfo
 
     finish
 endif
